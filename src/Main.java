@@ -14,7 +14,6 @@ public class Main {
 
     public static void main(String[] args) {
         String randomWord = getRandomWord(randomWordURI).replaceAll("\\[", "").replaceAll("\"", "").replaceAll("]", "").toLowerCase();
-        System.out.println("Word is " + randomWord);
         String hiddenWord = "";
         int secretWordLength = randomWord.length();
         Scanner scanner = new Scanner(System.in);
